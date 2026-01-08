@@ -173,7 +173,7 @@ Hình thành con người mới và các giá trị xã hội mới.
       }
       setCurrentIndex((prev) => (prev + 1) % items.length);
       isTransitioningRef.current = false;
-    }, 500);
+    }, 300);
   };
 
   const handlePrev = () => {
@@ -197,7 +197,7 @@ Hình thành con người mới và các giá trị xã hội mới.
       }
       setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
       isTransitioningRef.current = false;
-    }, 500);
+    }, 300);
   };
 
   const handleSeeMore = () => {

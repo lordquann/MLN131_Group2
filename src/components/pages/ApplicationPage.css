@@ -18,14 +18,14 @@
   padding: 40px clamp(20px, 5vw, 40px);
   position: relative;
   z-index: 1;
-  animation: fadeIn 0.8s ease-out;
+  animation: fadeIn 0.4s ease-out;
 }
 
 .application-header {
   text-align: center;
   margin-bottom: 60px;
   padding-top: 20px;
-  animation: fadeIn 1s ease-out;
+  animation: fadeIn 0.5s ease-out;
 }
 
 .application-title {
@@ -69,26 +69,26 @@
   border: 1px solid rgba(139, 69, 19, 0.2);
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: slideInUp 0.6s ease-out;
+  animation: slideInUp 0.3s ease-out;
   animation-fill-mode: both;
 }
 
 .section-card:nth-child(1) {
-  animation-delay: 0.1s;
+  animation-delay: 0.05s;
 }
 
 .section-card:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 
 .section-card:nth-child(3) {
-  animation-delay: 0.3s;
+  animation-delay: 0.15s;
 }
 
 @keyframes slideInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -137,20 +137,20 @@
   border-radius: 15px;
   border-left: 4px solid var(--primary);
   transition: all 0.3s ease;
-  animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.3s ease-out;
   animation-fill-mode: both;
 }
 
 .content-item:nth-child(1) {
-  animation-delay: 0.1s;
+  animation-delay: 0.05s;
 }
 
 .content-item:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 
 .content-item:nth-child(3) {
-  animation-delay: 0.3s;
+  animation-delay: 0.15s;
 }
 
 .content-item:hover {
@@ -187,16 +187,16 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
   position: relative;
-  animation: slideInUp 0.6s ease-out;
+  animation: slideInUp 0.3s ease-out;
   animation-fill-mode: both;
 }
 
 .comparison-card:nth-child(1) {
-  animation-delay: 0.1s;
+  animation-delay: 0.05s;
 }
 
 .comparison-card:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 
 .comparison-card:hover {
