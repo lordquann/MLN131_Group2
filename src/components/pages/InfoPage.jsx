@@ -96,13 +96,9 @@ Hình thành con người mới và các giá trị xã hội mới.
           <>
 
             <h3><b>Điều kiện kinh tế – xã hội</b></h3>
-            <p>
-              <b>Sự phát triển của lực lượng sản xuất dưới chủ nghĩa tư bản, đặc biệt là nền đại công nghiệp, tạo ra năng suất lao động cao và tính xã hội hóa ngày càng lớn của sản xuất.</b><br />
-            </p>
+              <p>Sự phát triển của lực lượng sản xuất dưới chủ nghĩa tư bản, đặc biệt là nền đại công nghiệp, tạo ra năng suất lao động cao và tính xã hội hóa ngày càng lớn của sản xuất.</p>
 
-            <p>
-              <b>Mâu thuẫn cơ bản của chủ nghĩa tư bản giữa tính chất xã hội hóa của sản xuất với chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất ngày càng gay gắt.              </b><br />
-            </p>
+              <p>Mâu thuẫn cơ bản của chủ nghĩa tư bản giữa tính chất xã hội hóa của sản xuất với chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất ngày càng gay gắt.              </p>
 
             <h3><b>Điều kiện giai cấp và chính trị – xã hội</b></h3>
             <p>Giai cấp công nhân ra đời và phát triển cùng với nền công nghiệp hiện đại, là giai cấp đại diện cho lực lượng sản xuất tiên tiến.            </p>
@@ -126,25 +122,25 @@ Hình thành con người mới và các giá trị xã hội mới.
           <>
             <h3><b>Về kinh tế</b></h3>
 
-            <p><b>Chế độ công hữu (ở những hình thức khác nhau) giữ vai trò chủ đạo đối với các tư liệu sản xuất chủ yếu của xã hội.            </b></p>
+            <p>Chế độ công hữu (ở những hình thức khác nhau) giữ vai trò chủ đạo đối với các tư liệu sản xuất chủ yếu của xã hội.</p>
 
-            <p><b>Nền kinh tế phát triển dựa trên lực lượng sản xuất hiện đại, khoa học – công nghệ ngày càng giữ vai trò quyết định.            </b></p>
+            <p>Nền kinh tế phát triển dựa trên lực lượng sản xuất hiện đại, khoa học – công nghệ ngày càng giữ vai trò quyết định.</p>
 
-            <p><b>Sản xuất nhằm đáp ứng nhu cầu ngày càng tăng của con người, không phải tối đa hóa lợi nhuận cho một thiểu số.</b></p>
+            <p>Sản xuất nhằm đáp ứng nhu cầu ngày càng tăng của con người, không phải tối đa hóa lợi nhuận cho một thiểu số.</p>
 
             <h3><b>Về chính trị</b></h3>
 
-            <p><b>Quyền lực nhà nước thuộc về nhân dân lao động, dưới sự lãnh đạo của giai cấp công nhân.            </b></p>
-            <p><b>Nhà nước mang bản chất mới: vừa là công cụ quản lý xã hội, vừa là phương tiện tổ chức xây dựng CNXH và bảo vệ lợi ích của đa số.            </b></p>
+            <p>Quyền lực nhà nước thuộc về nhân dân lao động, dưới sự lãnh đạo của giai cấp công nhân.</p>
+            <p>Nhà nước mang bản chất mới: vừa là công cụ quản lý xã hội, vừa là phương tiện tổ chức xây dựng CNXH và bảo vệ lợi ích của đa số.</p>
 
             <h3><b>Về xã hội</b></h3>
-            <p><b>Thực hiện công bằng xã hội, từng bước xóa bỏ áp bức, bóc lột và bất bình đẳng mang tính giai cấp.            </b></p>
-            <p><b>Các giai cấp, tầng lớp xã hội có xu hướng xích lại gần nhau, sự đối kháng giai cấp dần bị thu hẹp.            </b></p>
-            <p><b>Con người được tạo điều kiện phát triển toàn diện cả về vật chất lẫn tinh thần. </b></p>
+            <p>Thực hiện công bằng xã hội, từng bước xóa bỏ áp bức, bóc lột và bất bình đẳng mang tính giai cấp.</p>
+            <p>Các giai cấp, tầng lớp xã hội có xu hướng xích lại gần nhau, sự đối kháng giai cấp dần bị thu hẹp.</p>
+            <p>Con người được tạo điều kiện phát triển toàn diện cả về vật chất lẫn tinh thần.</p>
 
             <h3><b>Về văn hóa</b></h3>
-            <p><b>Nền văn hóa mang tính nhân văn, tiến bộ, kế thừa các giá trị tốt đẹp của nhân loại.</b></p>
-            <p><b>Con người vừa là mục tiêu, vừa là động lực của sự phát triển xã hội.</b></p>
+            <p>Nền văn hóa mang tính nhân văn, tiến bộ, kế thừa các giá trị tốt đẹp của nhân loại.</p>
+            <p>Con người vừa là mục tiêu, vừa là động lực của sự phát triển xã hội.</p>
           </>
         ),
       }
