@@ -23,7 +23,7 @@ export default function ApplicationPage() {
           <section className="application-section">
             <div className="section-card">
               <h2 className="section-title">
-                1. Vì sao sự giàu có của chủ nghĩa tư bản không thể phủ nhận tính tất yếu của chủ nghĩa xã hội
+                1. Vì sao sự giàu có của chủ nghĩa tư bản không thể xóa bỏ tính tất yếu của chủ nghĩa xã hội?
               </h2>
               
               <div className="content-item">
@@ -58,11 +58,11 @@ export default function ApplicationPage() {
           <section className="application-section">
             <div className="section-card">
               <h2 className="section-title">
-                2. Sự khác biệt giữa "Lý tưởng mơ hồ" và "Sự cần thiết khoa học"
+                2. Sự khác biệt giữa "Lý tưởng mơ hồ" và "Sự tất yếu khoa học"
               </h2>
               <p className="section-intro">
                 Các nguồn tài liệu phân biệt giữa Chủ nghĩa xã hội không tưởng (lý tưởng mơ hồ) và Chủ nghĩa xã hội khoa học 
-                (sự cần thiết khoa học) dựa trên quan điểm của họ về tương lai.
+                (sự tất yếu khoa học) dựa trên quan điểm của họ về tương lai.
               </p>
 
               <div className="comparison-grid">
@@ -77,7 +77,7 @@ export default function ApplicationPage() {
                 </div>
 
                 <div className="comparison-card">
-                  <h3 className="comparison-title">Tính cần thiết khoa học</h3>
+                  <h3 className="comparison-title">Tất yếu khoa học</h3>
                   <p className="comparison-content">
                     Chủ nghĩa xã hội khoa học, do Marx và Engels sáng lập, dựa trên chủ nghĩa duy vật lịch sử và lý thuyết về giá trị thặng dư. 
                     Nó xem sự sụp đổ của chủ nghĩa tư bản và sự thắng lợi của chủ nghĩa xã hội là điều tất yếu như nhau. 
