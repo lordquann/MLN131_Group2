@@ -54,7 +54,15 @@ export default function Navbar() {
         </button>
 
         <button type="button" className="nav-link" onClick={handleGameClick}>
-          Bảo tàng 3D
+          Triển lãm 3D
+        </button>
+
+        <button 
+          type="button" 
+          className={`nav-link ${location.pathname === "/appendix" ? "active" : ""}`}
+          onClick={() => navigate("/appendix")}
+        >
+          Phụ lục
         </button>
       </nav>
     </header>

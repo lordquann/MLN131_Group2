@@ -32,24 +32,22 @@ export default function InfoPage() {
     {
       id: 2,
       title: 'Điều kiện ra đời của chủ nghĩa xã hội',
-      topic: 'Chủ nghĩa xã hội không ra đời từ ý muốn chủ quan mà là kết quả của những điều kiện khách quan và chủ quan trong sự phát triển của lịch sử xã hội.',
-      description: 'Điều kiện kinh tế – xã hội, Điều kiện giai cấp và chính trị – xã hội và Điều kiện tư tưởng – lý luận',
+      topic: 'CNXH ra đời không phải ngẫu nhiên mà là kết quả của các điều kiện khách quan và chủ quan',
+      description: 'Điều kiện kinh tế, Điều kiện chính trị – xã hội',
       image: '/images/1.jpg',
       detail: {
         title: 'Điều kiện ra đời của chủ nghĩa xã hội',
         content: (
           <>
-            <h3><b>Điều kiện kinh tế – xã hội</b></h3>
-            <p>Sự phát triển của lực lượng sản xuất dưới chủ nghĩa tư bản, đặc biệt là nền đại công nghiệp, tạo ra năng suất lao động cao và tính xã hội hóa ngày càng lớn của sản xuất.</p>
-            <p>Mâu thuẫn cơ bản của chủ nghĩa tư bản giữa tính chất xã hội hóa của sản xuất với chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất ngày càng gay gắt.</p>
+            <h3><b>Điều kiện kinh tế</b></h3>
+            <p>Sự phát triển của lực lượng sản xuất trong lòng chủ nghĩa tư bản đạt đến trình độ xã hội hóa cao (nền đại công nghiệp cơ khí).</p>
+            <p>Mâu thuẫn giữa tính chất xã hội hóa của lực lượng sản xuất với chế độ chiếm hữu tư nhân tư bản chủ nghĩa trở nên gay gắt, đòi hỏi phải thay thế bằng quan hệ sở hữu công cộng.</p>
 
-            <h3><b>Điều kiện giai cấp và chính trị – xã hội</b></h3>
-            <p>Giai cấp công nhân ra đời và phát triển cùng với nền công nghiệp hiện đại, là giai cấp đại diện cho lực lượng sản xuất tiên tiến.</p>
-            <p>Giai cấp công nhân có lợi ích căn bản đối lập với giai cấp tư sản, đồng thời có khả năng liên minh với các tầng lớp lao động khác.</p>
+            <h3><b>Điều kiện giai chính trị – xã hội</b></h3>
+            <p>Sự trưởng thành của giai cấp công nhân. Mâu thuẫn kinh tế trong lòng CNTB biểu hiện về mặt xã hội là mâu thuẫn giữa giai cấp công nhân và giai cấp tư sản.</p>
+            <p>Khi giai cấp công nhân nhận thức được sứ mệnh của mình, tổ chức thành chính đảng (Đảng Cộng sản) và tiến hành cách mạng giành chính quyền, CNXH sẽ ra đời.</p>
 
-            <h3><b>Điều kiện tư tưởng – lý luận</b></h3>
-            <p>Sự ra đời của chủ nghĩa xã hội khoa học do C. Mác và Ph. Ăngghen sáng lập, sau này được V.I. Lênin phát triển, đã biến CNXH từ những ước mơ, lý tưởng không tưởng thành một học thuyết khoa học.</p>
-          </>
+            </>
         ),
       }
     },
@@ -62,23 +60,12 @@ export default function InfoPage() {
         title: 'Những đặc trưng bản chất của chủ nghĩa xã hội',
         content: (
           <>
-            <h3><b>Về kinh tế</b></h3>
-            <p>Chế độ công hữu (ở những hình thức khác nhau) giữ vai trò chủ đạo đối với các tư liệu sản xuất chủ yếu của xã hội.</p>
-            <p>Nền kinh tế phát triển dựa trên lực lượng sản xuất hiện đại, khoa học – công nghệ ngày càng giữ vai trò quyết định.</p>
-            <p>Sản xuất nhằm đáp ứng nhu cầu ngày càng tăng của con người, không phải tối đa hóa lợi nhuận cho một thiểu số.</p>
-
-            <h3><b>Về chính trị</b></h3>
-            <p>Quyền lực nhà nước thuộc về nhân dân lao động, dưới sự lãnh đạo của giai cấp công nhân.</p>
-            <p>Nhà nước mang bản chất mới: vừa là công cụ quản lý xã hội, vừa là phương tiện tổ chức xây dựng CNXH và bảo vệ lợi ích của đa số.</p>
-
-            <h3><b>Về xã hội</b></h3>
-            <p>Thực hiện công bằng xã hội, từng bước xóa bỏ áp bức, bóc lột và bất bình đẳng mang tính giai cấp.</p>
-            <p>Các giai cấp, tầng lớp xã hội có xu hướng xích lại gần nhau, sự đối kháng giai cấp dần bị thu hẹp.</p>
-            <p>Con người được tạo điều kiện phát triển toàn diện cả về vật chất lẫn tinh thần.</p>
-
-            <h3><b>Về văn hóa</b></h3>
-            <p>Nền văn hóa mang tính nhân văn, tiến bộ, kế thừa các giá trị tốt đẹp của nhân loại.</p>
-            <p>Con người vừa là mục tiêu, vừa là động lực của sự phát triển xã hội.</p>
+            <p>1. Giải phóng giai cấp, dân tộc, xã hội và con người; tạo điều kiện phát triển toàn diện.</p>
+            <p>2. Nền kinh tế phát triển cao, dựa trên lực lượng sản xuất hiện đại và công hữu tư liệu sản xuất chủ yếu; phân phối chủ yếu theo lao động (giai đoạn đầu).</p>
+            <p>3. Nhân dân lao động làm chủ (dân chủ XHCN).</p>
+            <p>4. Nhà nước kiểu mới mang bản chất giai cấp công nhân, đại biểu cho lợi ích/quyền lực/ý chí nhân dân lao động (thời kỳ quá độ gắn với chuyên chính vô sản).</p>
+            <p>5. Văn hoá phát triển cao, kế thừa và phát huy giá trị dân tộc và tinh hoa nhân loại.</p>
+            <p>6. Bình đẳng, đoàn kết dân tộc, hữu nghị và hợp tác quốc tế.</p>
           </>
         ),
       }

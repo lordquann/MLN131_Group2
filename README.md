@@ -67,7 +67,7 @@ npx wrangler pages deploy dist
 
 - 📚 Trang Lý thuyết với carousel
 - 💡 Trang Vận dụng với nội dung chi tiết
-- 🏛️ Trang Bảo tàng 3D
+- 🏛️ Trang Triển lãm 3D
 - 🎨 UI/UX hiện đại với animations
 - 📱 Responsive design
 - 🌐 Hỗ trợ tiếng Việt với fonts Inter & Noto Sans 

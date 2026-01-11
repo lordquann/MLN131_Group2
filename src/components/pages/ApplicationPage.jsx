@@ -102,42 +102,47 @@ export default function ApplicationPage() {
                 </h2>
               </div>
               <p className="section-intro">
-                Đối với Việt Nam, việc lựa chọn con đường xã hội chủ nghĩa được xem là lựa chọn duy nhất đúng đắn, 
-                phù hợp với quy luật lịch sử và điều kiện đặc thù của dân tộc.
+                Với Việt Nam, CNXH không chỉ là khẩu hiệu mà là mục tiêu phát triển và hệ định hướng chính sách đã được cụ thể hóa trong Cương lĩnh 2011 (8 đặc trưng + 8 phương hướng) và lựa chọn quá độ bỏ qua chế độ TBCN.
               </p>
 
               <div className="vietnam-content">
                 <div className="vietnam-item">
-                  <h3 className="vietnam-item-title">• Mục tiêu và định hướng quốc gia</h3>
+                  <h3 className="vietnam-item-title">(a) CNXH là "đích đến giá trị" cụ thể cho mô hình phát triển</h3>
                   <p className="vietnam-item-content">
-                    Chủ nghĩa xã hội cung cấp một khuôn khổ rõ ràng cho sự phát triển: "Nhân dân thịnh vượng, quốc gia hùng mạnh, 
-                    dân chủ, công lý và văn minh". Điều này đảm bảo rằng tăng trưởng kinh tế luôn gắn liền với tiến bộ và công bằng xã hội.
+                    Được diễn đạt thành mục tiêu xã hội: "Dân giàu, nước mạnh, dân chủ, công bằng, văn minh".
+                  </p>
+                  <p className="vietnam-item-content">
+                    Gắn phát triển kinh tế với phát triển con người, văn hóa, và công bằng xã hội (không coi tăng trưởng là mục tiêu duy nhất).
                   </p>
                 </div>
 
                 <div className="vietnam-item">
-                  <h3 className="vietnam-item-title">• Kế thừa có chọn lọc</h3>
+                  <h3 className="vietnam-item-title">(b) CNXH là "khung tổ chức" để vừa phát triển kinh tế vừa giữ định hướng xã hội</h3>
                   <p className="vietnam-item-content">
-                    Việc "vượt qua" chủ nghĩa tư bản ở Việt Nam không có nghĩa là bác bỏ những thành tựu của con người. 
-                    Thay vào đó, Việt Nam hướng đến việc kế thừa có chọn lọc những thành tựu khoa học, công nghệ và quản lý 
-                    được tạo ra dưới thời chủ nghĩa tư bản để xây dựng cơ sở vật chất, kỹ thuật cho chủ nghĩa xã hội.
+                    Kinh tế thị trường định hướng XHCN: thừa nhận động lực thị trường để phát triển lực lượng sản xuất, nhưng hướng đến quan hệ sản xuất tiến bộ phù hợp, giảm bất công, bảo đảm an sinh, và mở rộng cơ hội cho đa số.
+                  </p>
+                  <p className="vietnam-item-content">
+                    Điểm này phù hợp với luận điểm "CNTB tạo tiền đề vật chất nhưng cần thời gian tổ chức lại để phục vụ toàn xã hội".
                   </p>
                 </div>
 
                 <div className="vietnam-item">
-                  <h3 className="vietnam-item-title">• Chủ quyền nhân dân</h3>
+                  <h3 className="vietnam-item-title">(c) CNXH là cơ sở cho xây dựng nhà nước và dân chủ</h3>
                   <p className="vietnam-item-content">
-                    Chủ nghĩa xã hội cung cấp nền tảng để xây dựng một nhà nước pháp quyền xã hội chủ nghĩa, 
-                    nơi mọi quyền lực thuộc về nhân dân. Định hướng này khuyến khích "Sự đoàn kết dân tộc vĩ đại", 
-                    kết hợp sức mạnh của công nhân, nông dân và trí thức để bảo vệ và phát triển đất nước.
+                    Việt Nam xác định xây dựng Nhà nước pháp quyền XHCN của nhân dân, do nhân dân, vì nhân dân, do Đảng lãnh đạo.
+                  </p>
+                  <p className="vietnam-item-content">
+                    Đây là cách thể chế hóa đặc trưng "nhân dân lao động làm chủ", tạo công cụ để thực hiện các mục tiêu công bằng, đoàn kết, ổn định xã hội trong thời kỳ quá độ.
                   </p>
                 </div>
 
                 <div className="vietnam-item">
-                  <h3 className="vietnam-item-title">• Nền tảng đạo đức và văn hóa</h3>
+                  <h3 className="vietnam-item-title">(d) "Bỏ qua chế độ TBCN" là bỏ qua sự thống trị của quan hệ sản xuất TBCN, nhưng không bỏ qua thành tựu</h3>
                   <p className="vietnam-item-content">
-                    Nó đóng vai trò như một la bàn để xây dựng một nền văn hóa mới và những con người mới, 
-                    đảm bảo rằng các giá trị tinh thần và đạo đức không bị mai một trong quá trình theo đuổi tăng trưởng kinh tế.
+                    Ý nghĩa thực tiễn là: tiếp thu khoa học–công nghệ, quản trị, thành tựu văn minh để "đi nhanh" về lực lượng sản xuất, nhưng không đặt mục tiêu xã hội dưới sự chi phối tuyệt đối của tư hữu tư bản.
+                  </p>
+                  <p className="vietnam-item-content">
+                    Điều này khớp với định hướng: công nghiệp hóa–hiện đại hóa, kinh tế tri thức, bảo vệ môi trường, đối ngoại hòa bình–hợp tác.
                   </p>
                 </div>
               </div>
