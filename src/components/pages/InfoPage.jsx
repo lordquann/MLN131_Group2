@@ -1,15 +1,16 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useMemo } from 'react';
 import './InfoPage.css';
 
 export default function InfoPage() {
   const [showDetail, setShowDetail] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(1); // Item id=1 ở vị trí index 1 trong mảng đã sắp xếp
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const carouselRef = useRef(null);
   const listRef = useRef(null);
   const isTransitioningRef = useRef(false);
+  const isInitializedRef = useRef(false);
 
-  const items = [
+  const originalItems = [
     {
       id: 1,
       title: 'Chủ nghĩa xã hội',
@@ -160,6 +161,22 @@ export default function InfoPage() {
     }
   ];
 
+  // Sắp xếp lại items để item id=1 luôn ở vị trí thứ 2 (vị trí hiển thị mặc định)
+  const items = useMemo(() => {
+    if (originalItems.length < 2) return originalItems;
+    
+    const firstItem = originalItems.find(item => item.id === 1);
+    const otherItems = originalItems.filter(item => item.id !== 1);
+    
+    if (!firstItem) return originalItems;
+    
+    // Đặt item cuối cùng ở đầu, item id=1 ở vị trí thứ 2, các item còn lại theo sau
+    const lastItem = otherItems[otherItems.length - 1];
+    const remainingItems = otherItems.slice(0, -1);
+    
+    return [lastItem, firstItem, ...remainingItems];
+  }, []);
+
   const handleNext = () => {
     if (isTransitioningRef.current) return;
     isTransitioningRef.current = true;
@@ -222,8 +239,11 @@ export default function InfoPage() {
     }
   };
 
-  const handleItemClick = (targetIndex) => {
-    if (isTransitioningRef.current || targetIndex === currentIndex) {
+  const handleItemClick = (itemId) => {
+    // Tìm index của item trong mảng items đã sắp xếp
+    const targetIndex = items.findIndex(item => item.id === itemId);
+    
+    if (isTransitioningRef.current || targetIndex === -1 || targetIndex === currentIndex) {
       setIsSidebarOpen(false);
       return;
     }
@@ -239,8 +259,34 @@ export default function InfoPage() {
     if (isTransitioningRef.current) return;
     isTransitioningRef.current = true;
     
-    const diff = targetIndex - currentIndex;
+    const targetItemId = itemId;
+    
+    if (!listRef.current) {
+      isTransitioningRef.current = false;
+      setIsSidebarOpen(false);
+      return;
+    }
+    
+    // Tìm item đích trong DOM bằng data-item-id
+    const children = Array.from(listRef.current.children);
+    const targetItemElement = children.find(child => 
+      child.getAttribute('data-item-id') === String(targetItemId)
+    );
+    
+    if (!targetItemElement) {
+      isTransitioningRef.current = false;
+      setIsSidebarOpen(false);
+      return;
+    }
+    
+    // Tìm vị trí hiện tại của item đích trong DOM
+    const targetDomIndex = children.indexOf(targetItemElement);
+    
+    // Item hiện tại đang hiển thị luôn ở vị trí index 1 (thứ 2) trong DOM
+    const currentDomIndex = 1;
+    const diff = targetDomIndex - currentDomIndex;
     const absDiff = Math.abs(diff);
+    
     // Xác định hướng di chuyển (chọn đường ngắn nhất)
     const isForward = (diff > 0 && absDiff <= items.length / 2) || 
                       (diff < 0 && absDiff > items.length / 2);
@@ -267,22 +313,18 @@ export default function InfoPage() {
     // Thực hiện di chuyển từng bước
     let stepCount = 0;
     const performStep = () => {
-      if (stepCount < steps) {
+      if (stepCount < steps && listRef.current) {
         if (isForward) {
           // Di chuyển forward
-          if (listRef.current) {
-            const firstItem = listRef.current.firstElementChild;
-            if (firstItem) {
-              listRef.current.appendChild(firstItem);
-            }
+          const firstItem = listRef.current.firstElementChild;
+          if (firstItem) {
+            listRef.current.appendChild(firstItem);
           }
         } else {
           // Di chuyển backward
-          if (listRef.current) {
-            const lastItem = listRef.current.lastElementChild;
-            if (lastItem) {
-              listRef.current.prepend(lastItem);
-            }
+          const lastItem = listRef.current.lastElementChild;
+          if (lastItem) {
+            listRef.current.prepend(lastItem);
           }
         }
         
@@ -313,6 +355,50 @@ export default function InfoPage() {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  // Đảm bảo item đầu tiên được hiển thị khi component mount
+  useEffect(() => {
+    // Chỉ chạy một lần khi component mount
+    if (isInitializedRef.current) return;
+    
+    // Đợi DOM được render xong
+    const timer = setTimeout(() => {
+      if (listRef.current && !isInitializedRef.current) {
+        const children = Array.from(listRef.current.children);
+        if (children.length >= 2) {
+          // Tìm item đầu tiên (id = 1) trong DOM
+          const firstItemElement = children.find(child => 
+            child.getAttribute('data-item-id') === '1'
+          );
+          
+          if (firstItemElement) {
+            const firstItemIndex = children.indexOf(firstItemElement);
+            // Item hiển thị mặc định là item ở vị trí thứ 2 (index 1) trong DOM
+            // Nếu item đầu tiên không ở vị trí thứ 2, di chuyển nó về đó
+            if (firstItemIndex !== 1) {
+              // Lấy item ở vị trí thứ 2 hiện tại (nếu có)
+              const itemAtPosition1 = children[1];
+              
+              if (itemAtPosition1) {
+                // Di chuyển item đầu tiên về vị trí thứ 2
+                listRef.current.insertBefore(firstItemElement, itemAtPosition1);
+              } else {
+                // Không có item ở vị trí thứ 2, chèn item đầu tiên vào sau item đầu tiên
+                const firstChild = listRef.current.firstElementChild;
+                if (firstChild && firstChild !== firstItemElement) {
+                  listRef.current.insertBefore(firstItemElement, firstChild.nextSibling);
+                }
+              }
+            }
+            isInitializedRef.current = true;
+          }
+        }
+      }
+    }, 150); // Đợi một chút để DOM được render xong
+    
+    return () => clearTimeout(timer);
+  }, []); // Chỉ chạy một lần khi component mount
+
+  // Tìm item hiện tại dựa trên currentIndex trong mảng items đã sắp xếp
   const currentItem = items[currentIndex];
 
   return (
@@ -337,16 +423,20 @@ export default function InfoPage() {
         <div className="sidebar-content">
           <h3 className="sidebar-title">Danh sách nội dung</h3>
           <ul className="sidebar-list">
-            {items.map((item, index) => (
-              <li 
-                key={item.id} 
-                className={`sidebar-item ${index === currentIndex ? 'active' : ''}`}
-                onClick={() => handleItemClick(index)}
-              >
-                <span className="sidebar-item-number">{item.id}</span>
-                <span className="sidebar-item-text">{item.title}</span>
-              </li>
-            ))}
+            {originalItems.map((item, index) => {
+              // Tìm index của item này trong mảng items đã sắp xếp
+              const sortedIndex = items.findIndex(sortedItem => sortedItem.id === item.id);
+              return (
+                <li 
+                  key={item.id} 
+                  className={`sidebar-item ${sortedIndex === currentIndex ? 'active' : ''}`}
+                  onClick={() => handleItemClick(item.id)}
+                >
+                  <span className="sidebar-item-number">{item.id}</span>
+                  <span className="sidebar-item-text">{item.title}</span>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
@@ -354,7 +444,7 @@ export default function InfoPage() {
       <div className="carousel" ref={carouselRef}>
         <div className="list" ref={listRef}>
           {items.map((item, index) => (
-            <div key={item.id} className="item">
+            <div key={item.id} className="item" data-item-id={item.id}>
               <img src={item.image} alt={item.title} />
               <div className="introduce">
                 <div className="title">{item.title}</div>
