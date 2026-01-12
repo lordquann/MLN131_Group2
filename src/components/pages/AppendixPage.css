@@ -123,6 +123,23 @@
   color: #b22222;
 }
 
+.member-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 0;
+}
+
+.member-item {
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(139, 0, 0, 0.05);
+  border-left: 3px solid var(--accent);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -18,9 +18,10 @@ export default function InfoPage() {
       description: 'Theo quan điểm của chủ nghĩa Mác - Lênin, lịch sử xã hội loài người phát triển qua các hình thái kinh tế - xã hội. Trong đó, sự thay thế hình thái kinh tế - xã hội tư bản chủ nghĩa bằng hình thái kinh tế - xã hội cộng sản chủ nghĩa là một quá trình lịch sử - tự nhiên',
       image: '/images/chu nghia mac-lenin.jpg',
       detail: {
-        title: 'Hình thái kinh tế - xã hội cộng sản chủ nghĩa phát triển từ thấp lên cao qua hai giai đoạn:',
+        title: 'Chủ nghĩa xã hội',
         content: (
           <>
+            <h3><b>Hình thái kinh tế - xã hội cộng sản chủ nghĩa phát triển từ thấp lên cao qua hai giai đoạn:</b></h3>
             <p>1. Giai đoạn thấp (Giai đoạn đầu): Chính là Chủ nghĩa xã hội. Đây là xã hội vừa thoát thai từ chủ nghĩa tư bản, nên về mọi phương diện (kinh tế, đạo đức, tinh thần) nó vẫn còn mang những "dấu vết" của xã hội cũ.</p>
             <p>2. Giai đoạn cao: Là Chủ nghĩa cộng sản, khi xã hội đã phát triển hoàn thiện.</p>
           </>

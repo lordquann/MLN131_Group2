@@ -105,6 +105,22 @@ export default function AppendixPage() {
               </div>
             </div>
           </section>
+
+          {/* Thành viên nhóm */}
+          <section className="appendix-section">
+            <h2 className="section-title">Thành viên nhóm</h2>
+            <div className="source-item">
+              <div className="source-content">
+                <div className="member-list">
+                  <div className="member-item">SS180910 - Đỗ Trí Hiếu (Leader)</div>
+                  <div className="member-item">SE183332 - Tống Hồng Quân</div>
+                  <div className="member-item">SE183314 - Đinh Vương Thiên Tứ</div>
+                  <div className="member-item">SS180055 - Đặng Thành Phước</div>
+                  <div className="member-item">SA170133 - Vũ Thị Minh Phương</div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
