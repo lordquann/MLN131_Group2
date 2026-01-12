@@ -19,6 +19,12 @@ export default function AppendixPage() {
               </div>
             </div>
             <div className="source-item">
+              <div className="source-label">Hình ảnh:</div>
+              <div className="source-content">
+                Thư Viện Pháp Luật, Báo Lâm Đồng, Báo điện tử Đảng Cộng sản Việt Nam, Google Image
+              </div>
+            </div>
+            <div className="source-item">
               <div className="source-label">Tóm tắt:</div>
               <div className="source-content">
                 AI (Chat GPT)
@@ -63,7 +69,7 @@ export default function AppendixPage() {
             <div className="source-item">
               <div className="source-label">Hình ảnh:</div>
               <div className="source-content">
-                Báo Tuổi trẻ, Báo Thanh niên, Báo Dân trí, Thông tấn xã Việt Nam, Thông tin Chính phủ, Báo Quân đội nhân dân, Statista, IMF, Google Image
+                Báo Tuổi trẻ, Báo Thanh niên, Báo Dân trí, Thông tấn xã Việt Nam, Thông tin Chính phủ, Báo Quân đội nhân dân, Statista, IMF, WHO, Trendswatch.co, Google Image
               </div>
             </div>
 
